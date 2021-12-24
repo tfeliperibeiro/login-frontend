@@ -24,8 +24,8 @@ const Login = () => {
     const data = await fetch('https://applogin2021.herokuapp.com/login', {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'content-type': 'application/json',
       },
       body: JSON.stringify({ email, password }),
     });
