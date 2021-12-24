@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.logOff {
+  background-color: red;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+}
+
+.container-home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  margin-bottom: 50px;
+}

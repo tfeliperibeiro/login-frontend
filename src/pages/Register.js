@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { FormControl, FormLabel, Input, Button, Box } from '@chakra-ui/react';
+import { FormControl, FormLabel, Input, Button, Box, Text } from '@chakra-ui/react';
 import { AlertError, AlertSuccess } from '../component/Alerts';
 import { Link } from 'react-router-dom';
 
@@ -41,12 +41,16 @@ const Register = () => {
         justifyContent={'center'}
         alignItems={'center'}
       >
+        <Text fontSize="4xl" style={{ marginBottom: '30px' }}>
+          Register
+        </Text>
         <FormControl
           isRequired
           display={'flex'}
           flexDirection={'column'}
-          maxWidth={'30%'}
+          maxWidth={'80%'}
           justifyContent={'center'}
+          className="form-control"
         >
           <FormLabel htmlFor="name">Nome:</FormLabel>
           <Input
@@ -86,7 +90,7 @@ const Register = () => {
         {resultRegister.status === 'Success' ? (
           <>
             <AlertSuccess message={resultRegister.message} />
-            <Link style={{ marginTop: '30px' }} to={'/login'}>
+            <Link style={{ marginTop: '30px' }} to={'/'}>
               Fazer login
             </Link>
           </>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Register from './pages/Register';
 import Login from './pages/Login';
+import Home from './pages/Home';
 import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
@@ -12,8 +13,9 @@ function App() {
     <>
       <ChakraProvider>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </ChakraProvider>
     </>

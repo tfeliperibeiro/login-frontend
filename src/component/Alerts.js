@@ -3,7 +3,7 @@ import P from 'proptypes';
 
 const AlertError = ({ message }) => {
   return (
-    <Alert width={'30%'} marginTop={'30px'} status="error">
+    <Alert width={'80%'} marginTop={'30px'} status="error">
       <AlertIcon />
       {message}
     </Alert>
@@ -12,7 +12,7 @@ const AlertError = ({ message }) => {
 
 const AlertSuccess = ({ message }) => {
   return (
-    <Alert width={'30%'} marginTop={'30px'} status="success">
+    <Alert width={'80%'} marginTop={'30px'} status="success">
       <AlertIcon />
       {message}
     </Alert>
