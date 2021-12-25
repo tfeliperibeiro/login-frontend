@@ -23,13 +23,10 @@ const Login = () => {
     const { email, password } = dataLogin;
     const data = await fetch('https://applogin2021.herokuapp.com/login', {
       method: 'POST',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'content-type': 'application/json',
-      },
       body: JSON.stringify({ email, password }),
     });
     const dataJson = await data.json();
+    console.log(dataJson);
     setResultLogin(dataJson);
   };
 

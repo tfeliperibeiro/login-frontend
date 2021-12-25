@@ -21,10 +21,6 @@ const Register = () => {
     const { name, email, password } = dataRegister;
     const data = await fetch('https://applogin2021.herokuapp.com/register', {
       method: 'POST',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'content-type': 'application/json',
-      },
       body: JSON.stringify({ name, email, password }),
     });
     const dataJson = await data.json();
