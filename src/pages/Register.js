@@ -24,6 +24,7 @@ const Register = () => {
       body: JSON.stringify({ name, email, password }),
     });
     const dataJson = await data.json();
+
     setResultRegister(dataJson);
   };
 

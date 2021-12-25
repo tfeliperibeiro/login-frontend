@@ -26,7 +26,6 @@ const Login = () => {
       body: JSON.stringify({ email, password }),
     });
     const dataJson = await data.json();
-    console.log(dataJson);
     setResultLogin(dataJson);
   };
 
