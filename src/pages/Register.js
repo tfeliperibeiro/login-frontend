@@ -19,7 +19,6 @@ const Register = () => {
 
   const handleClickRegister = async () => {
     const { name, email, password } = dataRegister;
-    console.log(JSON.stringify({ name, email, password }));
     const data = await fetch('https://applogin2021.herokuapp.com/register', {
       method: 'POST',
       headers: {
